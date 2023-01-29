@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5444/questionnaire
+    username: root
+    password: rootroot
+    driverClassName: org.postgresql.Driver
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
